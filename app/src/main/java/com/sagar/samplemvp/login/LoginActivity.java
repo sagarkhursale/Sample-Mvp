@@ -1,7 +1,9 @@
-package com.sagar.samplemvp;
+package com.sagar.samplemvp.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.sagar.samplemvp.R;
 
 
 public class LoginActivity extends AppCompatActivity {
