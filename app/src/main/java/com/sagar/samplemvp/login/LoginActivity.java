@@ -30,14 +30,16 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityMvp
 
         ((App) getApplication()).getComponent().inject(this);
 
+
         firstName = findViewById(R.id.login_firstName_editText);
         lastName = findViewById(R.id.login_lastName_editText);
         login = findViewById(R.id.login_button);
 
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                presenter.loginButtonClicked();
             }
         });
 
