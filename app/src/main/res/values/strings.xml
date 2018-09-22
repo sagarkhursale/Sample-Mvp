@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Sample Mvp</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="log_in">Log In</string>
+
+
 </resources>
