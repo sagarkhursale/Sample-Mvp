@@ -2,6 +2,7 @@ package com.sagar.samplemvp.root;
 
 import android.app.Application;
 
+import com.sagar.samplemvp.login.LoginModule;
 
 
 public class App extends Application {
@@ -13,9 +14,10 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        component=DaggerApplicationComponent.builder()
-        .applicationModule(new ApplicationModule(this))
-        .build();
+        component = DaggerApplicationComponent.builder()
+                .applicationModule(new ApplicationModule(this))
+                .loginModule(new LoginModule())
+                .build();
     }
 
 
