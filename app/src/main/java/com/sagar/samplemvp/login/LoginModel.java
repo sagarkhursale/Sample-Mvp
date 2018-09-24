@@ -6,7 +6,7 @@ public class LoginModel implements LoginActivityMvp.Model {
     private LoginRepository loginRepository;
 
 
-    public LoginModel(LoginRepository loginRepository) {
+    LoginModel(LoginRepository loginRepository) {
         this.loginRepository = loginRepository;
     }
 
