@@ -37,7 +37,7 @@ public class LoginActivityPresenter implements LoginActivityMvp.Presenter {
     public void getCurrentUser() {
         User user = model.getUser();
 
-        /*if (user == null) {
+        if (user == null) {
             if (view != null) {
                 view.showUserNotAvailable();
             }
@@ -46,17 +46,18 @@ public class LoginActivityPresenter implements LoginActivityMvp.Presenter {
                 view.setFirstName(user.getFirstName());
                 view.setLastName(user.getLastName());
             }
-        }*/
+        }
 
-        // Used for unit test (noInteractionWithView)
+        /*// Used for unit test (noInteractionWithView)
         if(user!=null)
         {
             if (view != null) {
                 view.setFirstName(user.getFirstName());
                 view.setLastName(user.getLastName());
             }
-        }
+        }*/
 
+        // end
     }
 
     // END
