@@ -27,7 +27,7 @@ public class PresenterTests {
 
         user=new User("Fox","Mulder");
 
-        when(mockLoginModel.getUser()).thenReturn(user);
+//        when(mockLoginModel.getUser()).thenReturn(user);
 
         mockView=mock(LoginActivityMvp.View.class);
 
