@@ -48,7 +48,7 @@ public class LoginActivityPresenter implements LoginActivityMvp.Presenter {
             }
         }
 
-        /*// Used for unit test (noInteractionWithView)
+        /*// Used for unit test -1
         if(user!=null)
         {
             if (view != null) {
