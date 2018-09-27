@@ -5,8 +5,10 @@ import com.sagar.samplemvp.login.LoginActivityPresenter;
 import com.sagar.samplemvp.login.User;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 
 
@@ -32,6 +34,14 @@ public class PresenterTests {
         presenter=new LoginActivityPresenter(mockLoginModel);
 
         presenter.setView(mockView);
+    }
+
+
+    @Test
+    public void noInteractionWithView(){
+        presenter.getCurrentUser();
+
+        verifyZeroInteractions(mockView);
     }
 
 
