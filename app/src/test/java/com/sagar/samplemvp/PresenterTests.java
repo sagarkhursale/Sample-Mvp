@@ -68,5 +68,22 @@ public class PresenterTests {
     }
 
 
+    // Test 3
+    @Test
+    public void shouldShowErrorMessageWhenUserIsNull() {
+        when(mockLoginModel.getUser()).thenReturn(null);
+
+        presenter.getCurrentUser();
+
+        // verify model interaction
+        verify(mockLoginModel, times(1)).getUser();
+
+        // verify view interactions
+        verify(mockView, never()).setFirstName("Fox");
+        verify(mockView, never()).setLastName("Mulder");
+        verify(mockView, times(1)).showUserNotAvailable();
+    }
+
+
     // END
 }
